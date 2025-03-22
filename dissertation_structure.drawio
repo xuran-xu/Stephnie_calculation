@@ -1,45 +1,47 @@
 <mxfile>
   <diagram id="4tQcRl8qY7x7sxXUY8zH" name="Blockchain-Enabled Solar VPP">
     <!-- Horizontal Swimlane Definition -->
-    <mxCell id="lane1" value="Energy Production Layer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;res[...]
+    <mxCell id="lane1" value="Energy Production Layer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;">
       <mxGeometry x="20" y="40" width="980" height="240" as="geometry"/>
     </mxCell>
     
     <!-- Module Definition -->
-    <mxCell id="prosumer" value="<b>Prosumers</b><br>(Rooftop PV/Agricultural PV)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE3B3;strokeColor=#FFA726;" vertex="1" parent="lane1">
+    <mxCell id="prosumer" value="&lt;b&gt;Prosumers&lt;/b&gt;&lt;br&gt;(Rooftop PV/Agricultural PV)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE3B3;strokeColor=#FFA726;" vertex="1" parent="lane1">
       <mxGeometry x="20" y="40" width="160" height="80" as="geometry"/>
     </mxCell>
     
-    <mxCell id="geo" value="<b>Geographic Data Collection</b><br>・Coordinate Positioning<br>・Irradiance Monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B3E5FC;strokeColor=#039BE5;" [...]
+    <mxCell id="geo" value="&lt;b&gt;Geographic Data Collection&lt;/b&gt;&lt;br&gt;・Coordinate Positioning&lt;br&gt;・Irradiance Monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B3E5FC;strokeColor=#039BE5;" vertex="1" parent="lane1">
       <mxGeometry x="220" y="40" width="160" height="80" as="geometry"/>
     </mxCell>
     
-    <mxCell id="incentive" value="<b>Environmental Incentive Mechanism</b><br>・Power Generation Rewards<br>・Governance Rights Allocation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;[...]
+    <mxCell id="incentive" value="&lt;b&gt;Environmental Incentive Mechanism&lt;/b&gt;&lt;br&gt;・Power Generation Rewards&lt;br&gt;・Governance Rights Allocation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#4CAF50;" vertex="1" parent="lane1">
       <mxGeometry x="420" y="40" width="160" height="80" as="geometry"/>
     </mxCell>
     
-    <mxCell id="blockchain" value="<b>Blockchain Consensus</b><br>・Data On-Chain<br>・Smart Contracts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D1C4E9;strokeColor=#673AB7;" vertex="1" par[...]
+    <mxCell id="blockchain" value="&lt;b&gt;Blockchain Consensus&lt;/b&gt;&lt;br&gt;・Data On-Chain&lt;br&gt;・Smart Contracts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D1C4E9;strokeColor=#673AB7;" vertex="1" parent="lane1">
       <mxGeometry x="620" y="40" width="160" height="80" as="geometry"/>
     </mxCell>
     
-    <mxCell id="market" value="<b>Energy Trading Market</b><br>・P2P Trading<br>・Carbon Quota Settlement" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#F44336;" vertex="1" [...]
+    <mxCell id="market" value="&lt;b&gt;Energy Trading Market&lt;/b&gt;&lt;br&gt;・P2P Trading&lt;br&gt;・Carbon Quota Settlement" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#F44336;" vertex="1" parent="lane1">
       <mxGeometry x="820" y="40" width="160" height="80" as="geometry"/>
     </mxCell>
 
     <!-- Central Controller (Vertical Across Swimlanes) -->
-    <mxCell id="control" value="<b>Central Coordinated Control</b><br>・Dynamic Supply-Demand Matching<br>・Anomaly Detection" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FE;strokeColor=#[...]
+    <mxCell id="control" value="&lt;b&gt;Central Coordinated Control&lt;/b&gt;&lt;br&gt;・Dynamic Supply-Demand Matching&lt;br&gt;・Anomaly Detection" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FE;strokeColor=#03A9F4;" vertex="1" parent="lane1">
       <mxGeometry x="420" y="160" width="160" height="80" as="geometry"/>
     </mxCell>
 
     <!-- Connection Relations and Feedback -->
-    <mxCell id="conn1" value="Real-Time Power Generation Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#616161;" edge="1" parent="1" source="prosum[...]
+    <mxCell id="conn1" value="Real-Time Power Generation Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#616161;" edge="1" parent="1" source="prosumer" target="control"/>
     
-    <mxCell id="conn2" value="Spatial Data Enhancement" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#616161;" edge="1" parent="1" source="geo" target="[...]
+    <mxCell id="conn2" value="Spatial Data Enhancement" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#616161;" edge="1" parent="1" source="geo" target="control"/>
     
-    <mxCell id="conn3" value="Dispatch Instructions" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#616161;" edge="1" parent="1" source="control" target=[...]
+    <mxCell id="conn3" value="Dispatch Instructions" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#616161;" edge="1" parent="1" source="control" target="prosumer"/>
     
-    <mxCell id="conn4" value="On-Chain Transaction Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#616161;" edge="1" parent="1" source="blockchain" [...]
+    <mxCell id="conn4" value="On-Chain Transaction Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#616161;" edge="1" parent="1" source="blockchain" target="market"/>
     
-    <mxCell id="conn5" value="Environmental Points Feedback" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#4CAF50;dashed=1;" edge="1" parent="1" source=[...]
+    <mxCell id="conn5" value="Environmental Points Feedback" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#4CAF50;dashed=1;" edge="1" parent="1" source="incentive" target="prosumer"/>
     
-    <mxCell id="conn6" value="Contract Trigger Conditions" style="edgeStyle=orthogonalEdge ▋
+    <mxCell id="conn6" value="Contract Trigger Conditions" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#616161;" edge="1" parent="1" source="market" target="blockchain"/>
+  </diagram>
+</mxfile>
