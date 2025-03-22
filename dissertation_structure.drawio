@@ -1,49 +1,45 @@
 <mxfile>
   <diagram id="4tQcRl8qY7x7sxXUY8zH" name="Blockchain-Enabled Solar VPP">
-    <!-- 横向泳道定义 -->
-    <mxCell id="lane1" value="能源生产层" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;fontSize=14;" vertex="1" parent="1">
+    <!-- Horizontal Swimlane Definition -->
+    <mxCell id="lane1" value="Energy Production Layer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParen[...]
       <mxGeometry x="20" y="40" width="980" height="240" as="geometry"/>
     </mxCell>
     
-    <!-- 模块定义 -->
-    <mxCell id="prosumer" value="<b>Prosumers</b><br>（屋顶光伏/农光互补）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE3B3;strokeColor=#FFA726;" vertex="1" parent="lane1">
+    <!-- Module Definition -->
+    <mxCell id="prosumer" value="<b>Prosumers</b><br>(Rooftop PV/Agricultural PV)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE3B3;strokeColor=#FFA726;" vertex="1" parent="lane1">
       <mxGeometry x="20" y="40" width="160" height="80" as="geometry"/>
     </mxCell>
     
-    <mxCell id="geo" value="<b>地理位置采集</b><br>・坐标定位<br>・辐照度监测" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B3E5FC;strokeColor=#039BE5;" vertex="1" parent="lane1">
+    <mxCell id="geo" value="<b>Geographic Data Collection</b><br>・Coordinate Positioning<br>・Irradiance Monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B3E5FC;strokeColor=#039BE5;" vertex="1" parent="lane1[...]
       <mxGeometry x="220" y="40" width="160" height="80" as="geometry"/>
     </mxCell>
     
-    <mxCell id="incentive" value="<b>环保激励机制</b><br>・发电量奖励<br>・治理权分配" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#4CAF50;" vertex="1" parent="lane1">
+    <mxCell id="incentive" value="<b>Environmental Incentive Mechanism</b><br>・Power Generation Rewards<br>・Governance Rights Allocation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#4CAF50;" vertex="1" pare[...]
       <mxGeometry x="420" y="40" width="160" height="80" as="geometry"/>
     </mxCell>
     
-    <mxCell id="blockchain" value="<b>区块链共识</b><br>・数据上链<br>・智能合约" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D1C4E9;strokeColor=#673AB7;" vertex="1" parent="lane1">
+    <mxCell id="blockchain" value="<b>Blockchain Consensus</b><br>・Data On-Chain<br>・Smart Contracts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D1C4E9;strokeColor=#673AB7;" vertex="1" parent="lane[...]
       <mxGeometry x="620" y="40" width="160" height="80" as="geometry"/>
     </mxCell>
     
-    <mxCell id="market" value="<b>能源交易市场</b><br>・P2P交易<br>・碳配额结算" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#F44336;" vertex="1" parent="lane1">
+    <mxCell id="market" value="<b>Energy Trading Market</b><br>・P2P Trading<br>・Carbon Quota Settlement" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#F44336;" vertex="1" parent="lane1[...]
       <mxGeometry x="820" y="40" width="160" height="80" as="geometry"/>
     </mxCell>
 
-    <!-- 中央控制器（垂直跨泳道） -->
-    <mxCell id="control" value="<b>中央协同控制</b><br>・供需动态匹配<br>・异常检测" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FE;strokeColor=#03A9F4;" vertex="1" parent="1">
+    <!-- Central Controller (Vertical Across Swimlanes) -->
+    <mxCell id="control" value="<b>Central Coordinated Control</b><br>・Dynamic Supply-Demand Matching<br>・Anomaly Detection" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FE;strokeColor=#03A9F4;" vertex="1" parent[...]
       <mxGeometry x="420" y="160" width="160" height="80" as="geometry"/>
     </mxCell>
 
-    <!-- 连接关系与反馈 -->
-    <mxCell id="conn1" value="实时发电数据" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#616161;" edge="1" parent="1" source="prosumer" target="geo"/>
+    <!-- Connection Relations and Feedback -->
+    <mxCell id="conn1" value="Real-Time Power Generation Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#616161;" edge="1" parent="1" source="prosumer" target="g[...]
     
-    <mxCell id="conn2" value="空间数据增强" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#616161;" edge="1" parent="1" source="geo" target="control"/>
+    <mxCell id="conn2" value="Spatial Data Enhancement" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#616161;" edge="1" parent="1" source="geo" target="contro[...]
     
-    <mxCell id="conn3" value="调度指令" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#616161;" edge="1" parent="1" source="control" target="blockchain"/>
+    <mxCell id="conn3" value="Dispatch Instructions" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#616161;" edge="1" parent="1" source="control" target="blockcha[...]
     
-    <mxCell id="conn4" value="链上交易数据" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#616161;" edge="1" parent="1" source="blockchain" target="market"/>
+    <mxCell id="conn4" value="On-Chain Transaction Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#616161;" edge="1" parent="1" source="blockchain" target=[...]
     
-    <mxCell id="conn5" value="环保积分反馈" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#4CAF50;dashed=1;" edge="1" parent="1" source="incentive" target="prosumer"/>
+    <mxCell id="conn5" value="Environmental Points Feedback" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#4CAF50;dashed=1;" edge="1" parent="1" source="incentive"[...]
     
-    <mxCell id="conn6" value="合约触发条件" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#673AB7;dashed=1;" edge="1" parent="1" source="blockchain" target="incentive"/>
-    
-    <mxCell id="conn7" value="市场结算数据" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#F44336;dashed=1;" edge="1" parent="1" source="market" target="control"/>
-  </diagram>
-</mxfile>
+    <mxCell id="conn6" value="Contract Trigger Conditions" style="edgeStyle=orthogonalEdge ▋
