@@ -6,28 +6,28 @@
     </mxCell>
     
     <!-- 模块定义 -->
-    <mxCell id="prosumer" value="<b>Prosumers</b><br>（屋顶光伏/农光互补）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE3B3;strokeColor=#FFA726;" vertex="1" parent="lane1">
+    <mxCell id="prosumer" value="&lt;b&gt;Prosumers&lt;/b&gt;&lt;br&gt;（屋顶光伏/农光互补）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE3B3;strokeColor=#FFA726;" vertex="1" parent="lane1">
       <mxGeometry x="20" y="40" width="160" height="80" as="geometry"/>
     </mxCell>
     
-    <mxCell id="geo" value="<b>地理位置采集</b><br>・坐标定位<br>・辐照度监测" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B3E5FC;strokeColor=#039BE5;" vertex="1" parent="lane1">
+    <mxCell id="geo" value="&lt;b&gt;地理位置采集&lt;/b&gt;&lt;br&gt;・坐标定位&lt;br&gt;・辐照度监测" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B3E5FC;strokeColor=#039BE5;" vertex="1" parent="lane1">
       <mxGeometry x="220" y="40" width="160" height="80" as="geometry"/>
     </mxCell>
     
-    <mxCell id="incentive" value="<b>环保激励机制</b><br>・发电量奖励<br>・治理权分配" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#4CAF50;" vertex="1" parent="lane1">
+    <mxCell id="incentive" value="&lt;b&gt;环保激励机制&lt;/b&gt;&lt;br&gt;・发电量奖励&lt;br&gt;・治理权分配" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#4CAF50;" vertex="1" parent="lane1">
       <mxGeometry x="420" y="40" width="160" height="80" as="geometry"/>
     </mxCell>
     
-    <mxCell id="blockchain" value="<b>区块链共识</b><br>・数据上链<br>・智能合约" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D1C4E9;strokeColor=#673AB7;" vertex="1" parent="lane1">
+    <mxCell id="blockchain" value="&lt;b&gt;区块链共识&lt;/b&gt;&lt;br&gt;・数据上链&lt;br&gt;・智能合约" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D1C4E9;strokeColor=#673AB7;" vertex="1" parent="lane1">
       <mxGeometry x="620" y="40" width="160" height="80" as="geometry"/>
     </mxCell>
     
-    <mxCell id="market" value="<b>能源交易市场</b><br>・P2P交易<br>・碳配额结算" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#F44336;" vertex="1" parent="lane1">
+    <mxCell id="market" value="&lt;b&gt;能源交易市场&lt;/b&gt;&lt;br&gt;・P2P交易&lt;br&gt;・碳配额结算" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#F44336;" vertex="1" parent="lane1">
       <mxGeometry x="820" y="40" width="160" height="80" as="geometry"/>
     </mxCell>
 
     <!-- 中央控制器（垂直跨泳道） -->
-    <mxCell id="control" value="<b>中央协同控制</b><br>・供需动态匹配<br>・异常检测" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FE;strokeColor=#03A9F4;" vertex="1" parent="1">
+    <mxCell id="control" value="&lt;b&gt;中央协同控制&lt;/b&gt;&lt;br&gt;・供需动态匹配&lt;br&gt;・异常检测" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FE;strokeColor=#03A9F4;" vertex="1" parent="1">
       <mxGeometry x="420" y="160" width="160" height="80" as="geometry"/>
     </mxCell>
 
