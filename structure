@@ -1,0 +1,36 @@
+graph LR
+    %% 定义样式
+    classDef blueBox fill:#def,stroke:#005fcc,stroke-width:2px,font-family:Arial,font-size:11pt
+    classDef greenBox fill:#dfd,stroke:#80b300,stroke-width:2px,font-family:Arial,font-size:11pt
+    classDef redBorder stroke:#ff0000,stroke-width:3px
+    classDef whiteBox fill:#fff,stroke:#000,stroke-width:1px
+
+    %% 第一列
+    subgraph Data_Acquisition["Data Acquisition"]
+        A["Green Energy Devices/<br>IoT Sensors"] --> B["Transaction Matching<br>ST-DBSCAN + Q-learning"]
+    end
+
+    %% 第二列
+    subgraph Validation_and_Calculation["Validation and Calculation"]
+        C["Smart Contract Validation<br>Layer"] --> D["Green Credit Calculation<br>New Data + Historical Points"]
+        D --> E["Dual-Weight Generation<br>Token Stake and Eco-Scores"]
+    end
+
+    %% 第三列
+    subgraph Consensus_and_Management["Consensus and Management"]
+        F["DPoS Delegate Election<br>Weighted by Token and<br>Eco Scores"] --> G["Block Production &<br>Validation"]
+        G --> H["Anomaly Detection &<br>Incentive Mechanism"]
+    end
+
+    %% 连接关系
+    B --> C
+    E --> F
+    H -->|Feedback| D
+    H -->|Adjust| E
+
+    %% 样式应用
+    class A,G whiteBox
+    class B,C,H blueBox
+    class D,E greenBox
+    class F whiteBox
+    class Data_Acquisition,Validation_and_Calculation,Consensus_and_Management redBorder
