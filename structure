@@ -1,25 +1,24 @@
-graph LR
+graph TB
     %% 定义样式
     classDef blueBox fill:#def,stroke:#005fcc,stroke-width:2px,font-family:Arial,font-size:11pt
     classDef greenBox fill:#dfd,stroke:#80b300,stroke-width:2px,font-family:Arial,font-size:11pt
     classDef redBorder stroke:#ff0000,stroke-width:3px
     classDef whiteBox fill:#fff,stroke:#000,stroke-width:1px
 
-    %% 第一列
-    subgraph Data_Acquisition["Data Acquisition"]
-        A["Green Energy Devices/<br>IoT Sensors"] --> B["Transaction Matching<br>ST-DBSCAN + Q-learning"]
+    %% 第一行组件
+    subgraph Data_Acquisition[Data Acquisition]
+        A[Green Energy Devices/IoT Sensors] --> B[Transaction Matching ST-DBSCAN + Q-learning]
     end
 
-    %% 第二列
-    subgraph Validation_and_Calculation["Validation and Calculation"]
-        C["Smart Contract Validation<br>Layer"] --> D["Green Credit Calculation<br>New Data + Historical Points"]
-        D --> E["Dual-Weight Generation<br>Token Stake and Eco-Scores"]
+    subgraph Validation_and_Calculation[Validation and Calculation]
+        C[Smart Contract Validation Layer] --> D[Green Credit Calculation New Data + Historical Points]
+        D --> E[Dual-Weight Generation Token Stake and Eco-Scores]
     end
 
-    %% 第三列
-    subgraph Consensus_and_Management["Consensus and Management"]
-        F["DPoS Delegate Election<br>Weighted by Token and<br>Eco Scores"] --> G["Block Production &<br>Validation"]
-        G --> H["Anomaly Detection &<br>Incentive Mechanism"]
+    %% 第二行组件
+    subgraph Consensus_and_Management[Consensus and Management]
+        F[DPoS Delegate Election Weighted by Token and Eco Scores] --> G[Block Production & Validation]
+        G --> H[Anomaly Detection & Incentive Mechanism]
     end
 
     %% 连接关系
