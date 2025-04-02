@@ -1,0 +1,20 @@
+flowchart TD;
+    classDef ieeeNode fill:#f8f9fa,stroke:#333,stroke-width:2px,rounded:0,font-family:Arial,font-size:12pt;
+    classDef techNode fill:#e0f0ff,stroke:#005fcc,stroke-width:2px,font-family:Arial,font-size:11pt;
+    classDef dataNode fill:#f5ffeb,stroke:#80b300,stroke-width:2px,font-family:Arial,font-size:11pt;
+    
+    subgraph Data_Acquisition
+        A[Green Energy Devices / IoT Sensors]:::ieeeNode --> B[Transaction Matching ST-DBSCAN + Q-learning]:::techNode
+    end
+    subgraph Validation_and_Calculation
+        B --> C[Smart Contract Validation Layer]:::techNode
+        C --> D[Green Credit Calculation New Data + Historical Points]:::dataNode
+        D --> E[Dual-Weight Generation Token Stake and Eco-Scores]:::dataNode
+    end
+    subgraph Consensus_and_Management
+        E --> F[DPoS Delegate Election Weighted by Token and Eco Scores]:::ieeeNode
+        F --> G[Block Production & Validation]:::ieeeNode
+        G --> H[Anomaly Detection & Incentive Mechanism]:::techNode
+        H -->|Feedback| D
+        H -->|Adjust| E
+    end
